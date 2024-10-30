@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="5; url=https://gdsc-hau.pages.dev/" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <title>Redirecting...</title>
+    <style>
+        /* General page styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('bg.png') no-repeat center center/cover;
+            opacity: 0;
+            animation: fadeInBg 2s ease forwards;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Container styling */
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            animation: fadeInContent 1.5s ease 0.5s forwards;
+            opacity: 0;
+        }
+
+        /* Enhanced loader with Google accent colors */
+        .loader {
+            border: 6px solid transparent;
+            border-top: 6px solid #4285F4; /* Google Blue */
+            border-right: 6px solid #EA4335; /* Google Red */
+            border-bottom: 6px solid #FBBC05; /* Google Yellow */
+            border-left: 6px solid #34A853; /* Google Green */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1.5s linear infinite, pulse 1s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+
+        /* Loader animations */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Background fade-in animation */
+        @keyframes fadeInBg {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Content fade-in animation */
+        @keyframes fadeInContent {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Link styling with hover effect */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        a:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Subtle glow animation for aesthetic appeal */
+        .glow {
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db, 0 0 40px #3498db;
+            }
+            to {
+                text-shadow: 0 0 20px #8e44ad, 0 0 30px #8e44ad, 0 0 40px #8e44ad, 0 0 50px #8e44ad;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <p class="glow">Redirecting you to the site...</p>
+        <p>If you're not automatically redirected, <a href="https://gdsc-hau.pages.dev/">click here</a>.</p>
+    </div>
+</body>
+</html>
